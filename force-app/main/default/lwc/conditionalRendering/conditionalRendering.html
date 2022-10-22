@@ -10,5 +10,10 @@
         <template for:each={cityList} for:item="city">
             <p key={city}>{city}</p>
         </template>
+
+        Example with iterator (Can access first and last property with iterator:it)
+        <template iterator:it={cityList}>
+            <p key={it.value}>{it.value}</p>
+        </template>
     
 </template>
