@@ -7,9 +7,9 @@ secondNumber;
 
 numberChangeHandler(event) {
     const inputBox = event.target.name;
-    if(inputBox.name === 'firstNumber') {
+    if(inputBox === 'firstNumber') {
         this.firstNumber = event.target.value;
-    } else if (inputBox.name === 'secondNumber') {
+    } else if (inputBox === 'secondNumber') {
         this.secondNumber = event.target.value;
     }
 }
@@ -21,14 +21,20 @@ addHandler() {
 }
 
 subHandler() {
-
+    const firstNumero = parseInt(this.firstNumber);
+    const secondNumero = parseInt(this.secondNumber);
+    this.currentResult = `Result of ${firstNumero} - ${secondNumero} is ${firstNumero - secondNumero}`
 }
 
 multiplyHandler() {
-
+    const firstNumero = parseInt(this.firstNumber);
+    const secondNumero = parseInt(this.secondNumber);
+    this.currentResult = `Result of ${firstNumero} x ${secondNumero} is ${firstNumero * secondNumero}`
 }
 
 divideHandler() {
-
+    const firstNumero = parseInt(this.firstNumber);
+    const secondNumero = parseInt(this.secondNumber);
+    this.currentResult = `Result of ${firstNumero} / ${secondNumero} is ${firstNumero / secondNumero}`
 }
 }

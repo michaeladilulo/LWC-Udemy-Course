@@ -41,12 +41,12 @@
                      label="Divide"
                      icon-name="utility:magicwand" 
                      icon-position="right"
-                     onchange={divideHandler}
+                     onclick={divideHandler}
                      ></lightning-button>
                 </lightning-button-group>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium" size="12">
-                <lightning-formatted-text value={}></lightning-formatted-text>
+                <lightning-formatted-text value={currentResult}></lightning-formatted-text>
             </lightning-layout-item>
         </lightning-layout>
     </lightning-card>
