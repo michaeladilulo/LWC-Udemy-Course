@@ -2,10 +2,18 @@
     <lightning-card title="Simple Calculator">
         <lightning-layout multiple-rows>
             <lightning-layout-item padding="around-medium">
-                <lightning-input type="number" label="First Number" onchange={calculatorNumbers}></lightning-input>
+                <lightning-input type="number" name="firstNumber" onchange={calculatorNumbers}></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium">
-                <lightning-input type="number" label="SecondNumber" onchange={calculatorNumbers}></lightning-input>
+                <lightning-input type="number" name="secondNumber" onchange={calculatorNumbers}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-medium">
+                <lightning-button-group>
+                    <lightning-button label="Add"></lightning-button>
+                    <lightning-button label="Subtract"></lightning-button>
+                    <lightning-button label="Multiply"></lightning-button>
+                    <lightning-button label="Divide"></lightning-button>
+                </lightning-button-group>
             </lightning-layout-item>
         </lightning-layout>
     </lightning-card>
