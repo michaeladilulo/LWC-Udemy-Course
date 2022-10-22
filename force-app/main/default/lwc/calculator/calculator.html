@@ -2,17 +2,47 @@
     <lightning-card title="Simple Calculator" icon-name="standard:formula">
         <lightning-layout multiple-rows>
             <lightning-layout-item padding="around-medium" size="12">
-                <lightning-input type="number" name="firstNumber" label="First Number"></lightning-input>
+                <lightning-input 
+                type="number" 
+                name="firstNumber" 
+                label="First Number"
+                onchange={numberChangeHandler}
+                ></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium" size="12">
-                <lightning-input type="number" name="secondNumber" label="Second Number"></lightning-input>
+                <lightning-input 
+                type="number" 
+                name="secondNumber" 
+                label="Second Number"
+                onchange={numberChangeHandler}
+                ></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium" size="12">
                 <lightning-button-group>
-                    <lightning-button label="Add" icon-name="utility:add" icon-position="right"></lightning-button>
-                    <lightning-button label="Subtract" icon-name="utility:dash" icon-position="right"></lightning-button>
-                    <lightning-button label="Multiply" icon-name="utility:variable" icon-position="right"></lightning-button>
-                    <lightning-button label="Divide" icon-name="utility:magicwand" icon-position="right"></lightning-button>
+                    <lightning-button
+                     label="Add" 
+                     icon-name="utility:add" 
+                     icon-position="right"
+                     onclick={addHandler}
+                     ></lightning-button>
+                    <lightning-button 
+                    label="Subtract" 
+                    icon-name="utility:dash" 
+                    icon-position="right"
+                    onclick={subHandler}
+                    ></lightning-button>
+                    <lightning-button
+                     label="Multiply" 
+                     icon-name="utility:variable" 
+                     icon-position="right"
+                     onclick={multiplyHandler}
+                     ></lightning-button>
+                    <lightning-button
+                     label="Divide"
+                     icon-name="utility:magicwand" 
+                     icon-position="right"
+                     onchange={divideHandler}
+                     ></lightning-button>
                 </lightning-button-group>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium" size="12">
