@@ -15,7 +15,9 @@ numberChangeHandler(event) {
 }
 
 addHandler() {
-
+    const firstNumero = parseInt(this.firstNumber);
+    const secondNumero = parseInt(this.secondNumber);
+    this.currentResult = `Result of ${firstNumero} + ${secondNumero} is ${firstNumero + secondNumero}`
 }
 
 subHandler() {
