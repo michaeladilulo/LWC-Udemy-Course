@@ -10,6 +10,13 @@
             <lightning-button variant="brand-outline" label="Divide /" title="Divide" onclick={handleDivideNums}></lightning-button>
         </div>
 
+        <template if:true={calculating}>
+            <div>
+                The result of {firstNumber} {operator} {secondNumber} is {result}
+            </div>
+        </template>
+
+
     </div>
 
 </template>
