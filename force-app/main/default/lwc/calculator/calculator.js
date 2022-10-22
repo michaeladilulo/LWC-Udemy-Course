@@ -15,6 +15,21 @@ handleSecondChange(event) {
 
 handleAddNums() {
     this.result = this.firstNumber + this.secondNumber;
-    console.log(parseInt(this.result));
+    console.log('Add: ', parseInt(this.result));
+}
+
+handleSubtractNums() {
+    this.result = this.firstNumber - this.secondNumber;
+    console.log('Subtract: ', parseInt(this.result));
+}
+
+handleMultiplyNums() {
+    this.result = this.firstNumber * this.secondNumber;
+    console.log('Multiply: ', parseInt(this.result));
+}
+
+handleDivideNums() {
+    this.result = this.firstNumber / this.secondNumber;
+    console.log('Divide: ', parseInt(this.result));
 }
 }

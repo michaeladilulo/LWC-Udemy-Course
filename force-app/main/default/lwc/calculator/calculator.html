@@ -3,7 +3,13 @@
         <lightning-input label="First Number" type="number" onchange={handleFirstChange}></lightning-input>
         <lightning-input label="Second Number" type="number" onchange={handleSecondChange}></lightning-input>
 
-        <lightning-button variant="success" label="Add +" title="Add" onclick={handleAddNums}></lightning-button>
+        <div class="slds-m-vertical_medium">
+            <lightning-button class="slds-m-right_medium" variant="success" label="Add +" title="Add" onclick={handleAddNums}></lightning-button>
+            <lightning-button class="slds-m-right_medium" variant="brand" label="Subtract -" title="Subtract" onclick={handleSubtractNums}></lightning-button>
+            <lightning-button class="slds-m-right_medium" variant="destructive" label="Multiply *" title="Multiply" onclick={handleMultiplyNums}></lightning-button>
+            <lightning-button variant="brand-outline" label="Divide /" title="Divide" onclick={handleDivideNums}></lightning-button>
+        </div>
+
     </div>
 
 </template>
