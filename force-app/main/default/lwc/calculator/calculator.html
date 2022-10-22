@@ -1,22 +1,3 @@
 <template>
-    <div class="slds-box slds-theme_default">
-        <lightning-input label="First Number" type="number" onchange={handleFirstChange}></lightning-input>
-        <lightning-input label="Second Number" type="number" onchange={handleSecondChange}></lightning-input>
-
-        <div class="slds-m-vertical_medium">
-            <lightning-button class="slds-m-right_medium" variant="success" label="Add +" title="Add" onclick={handleAddNums}></lightning-button>
-            <lightning-button class="slds-m-right_medium" variant="brand" label="Subtract -" title="Subtract" onclick={handleSubtractNums}></lightning-button>
-            <lightning-button class="slds-m-right_medium" variant="destructive" label="Multiply *" title="Multiply" onclick={handleMultiplyNums}></lightning-button>
-            <lightning-button variant="brand-outline" label="Divide /" title="Divide" onclick={handleDivideNums}></lightning-button>
-        </div>
-
-        <template if:true={calculating}>
-            <div>
-                The result of {firstNumber} {operator} {secondNumber} is {result}
-            </div>
-        </template>
-
-
-    </div>
 
 </template>
