@@ -2,6 +2,7 @@ import { LightningElement, track } from 'lwc';
 
 export default class Calculator extends LightningElement {
 @track currentResult;
+@track previousResult = [];
 firstNumber;
 secondNumber;
 
@@ -18,23 +19,27 @@ addHandler() {
     const firstNumero = parseInt(this.firstNumber);
     const secondNumero = parseInt(this.secondNumber);
     this.currentResult = `Result of ${firstNumero} + ${secondNumero} is ${firstNumero + secondNumero}`
+    this.previousResult.push(this.currentResult)
 }
 
 subHandler() {
     const firstNumero = parseInt(this.firstNumber);
     const secondNumero = parseInt(this.secondNumber);
     this.currentResult = `Result of ${firstNumero} - ${secondNumero} is ${firstNumero - secondNumero}`
+    this.previousResult.push(this.currentResult)
 }
 
 multiplyHandler() {
     const firstNumero = parseInt(this.firstNumber);
     const secondNumero = parseInt(this.secondNumber);
     this.currentResult = `Result of ${firstNumero} x ${secondNumero} is ${firstNumero * secondNumero}`
+    this.previousResult.push(this.currentResult)
 }
 
 divideHandler() {
     const firstNumero = parseInt(this.firstNumber);
     const secondNumero = parseInt(this.secondNumber);
     this.currentResult = `Result of ${firstNumero} / ${secondNumero} is ${firstNumero / secondNumero}`
+    this.previousResult.push(this.currentResult)
 }
 }
