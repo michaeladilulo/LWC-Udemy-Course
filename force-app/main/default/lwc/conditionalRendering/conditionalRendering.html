@@ -1,0 +1,10 @@
+<template>
+    <lightning-input type="checkbox" onchange={handleDataDisplay}></lightning-input>
+        <template if:true={dataDisplay}>
+            <div>Data is displaying</div>
+        </template>
+        <template if:false={dataDisplay}>
+            <div>No current data to show</div>
+        </template>
+    
+</template>
