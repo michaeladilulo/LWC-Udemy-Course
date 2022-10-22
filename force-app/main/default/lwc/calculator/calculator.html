@@ -1,18 +1,18 @@
 <template>
-    <lightning-card title="Simple Calculator">
+    <lightning-card title="Simple Calculator" icon-name="standard:formula">
         <lightning-layout multiple-rows>
             <lightning-layout-item padding="around-medium">
-                <lightning-input type="number" name="firstNumber" onchange={calculatorNumbers}></lightning-input>
+                <lightning-input type="number" name="firstNumber"></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium">
-                <lightning-input type="number" name="secondNumber" onchange={calculatorNumbers}></lightning-input>
+                <lightning-input type="number" name="secondNumber"></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium">
                 <lightning-button-group>
-                    <lightning-button label="Add"></lightning-button>
-                    <lightning-button label="Subtract"></lightning-button>
-                    <lightning-button label="Multiply"></lightning-button>
-                    <lightning-button label="Divide"></lightning-button>
+                    <lightning-button label="Add" icon-name="utility:add" icon-position="right"></lightning-button>
+                    <lightning-button label="Subtract" icon-name="utility:dash" icon-position="right"></lightning-button>
+                    <lightning-button label="Multiply" icon-name="utility:variable" icon-position="right"></lightning-button>
+                    <lightning-button label="Divide" icon-name="utility:magicwand" icon-position="right"></lightning-button>
                 </lightning-button-group>
             </lightning-layout-item>
             <lightning-layout-item padding="around-medium">
