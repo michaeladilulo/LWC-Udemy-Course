@@ -6,5 +6,9 @@
         <template if:false={dataDisplay}>
             <div>No current data to show</div>
         </template>
+
+        <template for:each={cityList} for:item="city">
+            <p key={city}>{city}</p>
+        </template>
     
 </template>
