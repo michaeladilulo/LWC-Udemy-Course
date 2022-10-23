@@ -3,6 +3,7 @@ import { LightningElement, track } from 'lwc';
 export default class Calculator extends LightningElement {
 @track currentResult;
 @track previousResult = [];
+@track showPreviousResults = false;
 firstNumber;
 secondNumber;
 
@@ -41,5 +42,9 @@ divideHandler() {
     const secondNumero = parseInt(this.secondNumber);
     this.currentResult = `Result of ${firstNumero} / ${secondNumero} is ${firstNumero / secondNumero}`
     this.previousResult.push(this.currentResult)
+}
+
+previousResultsToggle(event) {
+   this.showPreviousResults = event.target.checked;
 }
 }
